@@ -42,14 +42,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST'){
 
     ?>
     <form method="post" action="register.php" class="p-5">
-        <div class="form-group">
+        <div class="form-group ">
             <label for="email">Email</label>
-            <input id="email" name="email" class="form-control">
+            <input id="email" name="email" placeholder="email" class="form-control">
         </div>
 
         <div class="form-group mt-2">
             <label for="password">Password</label>
-            <input id="password" name="password" class="form-control">  
+            <input id="password" name="password" placeholder="Password" class="form-control">  
         </div>
         <?php
                 if(count($errors) != 0){
